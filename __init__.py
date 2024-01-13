@@ -3,7 +3,7 @@ from emoji import emojize, is_emoji
 from unicodedata import lookup
 
 emoji_sounds: dict
-SOUNDS_DIR = (Path("__file__").parent/"sounds").absolute()
+SOUNDS_DIR = (Path(__file__).parent/"sounds").absolute()
 
 def _load_emoji_sounds(sound_dir: Path, return_unicode_separately:bool=False, return_failed_characters:bool=False) -> dict | tuple:
 	files = sound_dir.glob("*.wav")
