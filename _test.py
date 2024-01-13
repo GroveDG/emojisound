@@ -1,5 +1,5 @@
 from pathlib import Path
-from emoji import emojize, is_emoji, version
+from emoji import emojize, is_emoji
 from unicodedata import lookup
 
 def main():
