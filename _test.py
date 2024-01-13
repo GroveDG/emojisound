@@ -3,7 +3,7 @@ from emoji import emojize, is_emoji, version
 from unicodedata import lookup
 
 def main():
-	files = Path().glob("*.wav")
+	files = Path("sounds").glob("*.wav")
 	emoji_characters = []
 	unicode_characters = []
 	falied_characters = []
